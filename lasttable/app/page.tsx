@@ -1,6 +1,14 @@
+"use client";
 import { Button } from "@/components/ui/button";
+import PromptInput from "@/components/ui/prompt";
 
 export default function Home() {
+  // handle prompt submission here
+  const handlePromptSubmit = (prompt: string) => {
+    console.log("Prompt submitted:", prompt);
+    // TODO: send to backend or Supabase
+  };
+
   return (
     <main className="flex flex-col min-h-screen items-center justify-between p-6 bg-softGreen text-deepPlum">
       {/* Header */}
@@ -31,6 +39,11 @@ export default function Home() {
         <Button className="text-lg px-6 py-3 bg-paleBlue text-white hover:bg-navyBlue">
           Start Exploring
         </Button>
+      </section>
+
+      {/* Prompt Input Section */}
+      <section className="w-full max-w-5xl mt-12">
+        <PromptInput onSubmit={handlePromptSubmit} />
       </section>
 
       {/* Map Section */}
