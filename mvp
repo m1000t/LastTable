@@ -15,3 +15,14 @@ Example
 
 - "Give me a place to eat near 501 queen street for 2 people, vegan"
 - gives you a list of places that are near 501 queen street and vegan and also gives you an update on if there are places to sit
+
+
+Tech Stack
+FrontEnd
+- NextJs/react
+- TailwindCSS
+- MapBox or google Maps API
+
+Backend
+- Node.js + Express + PostgreSQL
+- Supabase
