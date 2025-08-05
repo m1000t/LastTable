@@ -5,3 +5,9 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+const withTM = require("next-transpile-modules")(["react-map-gl"]);
+
+module.exports = withTM({
+  reactStrictMode: true,
+});

@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import TorontoMap from "@/components/ui/map";
 
 export default function Home() {
   return (
@@ -35,9 +34,7 @@ export default function Home() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full max-w-5xl mt-24">
-        <TorontoMap />
-      </section>
+      <section className="w-full max-w-5xl mt-24"></section>
 
       {/* CTA */}
       <section className="mt-24 text-center">
